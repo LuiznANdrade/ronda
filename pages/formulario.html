@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="../images/icone.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/style2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Não Conformidade | Anhanguera</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+<script src="jquery/javascript.js"></script>
+<script src="../jquery/form-seguranca.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="anhanguera-container">
+        <div id="nav-bar">
+            <a href="../index.html"><img id="logo-principal" src="../images/logo.png" alt=""></a>
+        </div>
+
+        <section id="form-labs-multi">
+          <h1 id="titleLab">Relatório de NÃO CONFORMIDADE</h1>
+          <h2 id="titleLab" class="descricao">Por favor, algo esta fora dos conformes? <br> Então, preencha os campos a baixo: </h2>
+         
+            <form class="informatica" id="form-container" style="display: flex;" method="post">
+                <div class="inputbox">
+                  <input type="text" placeholder="Insira o Nome" id="valueInput" class="name" required="required" name="Nome do Respondavel de Ronda">
+                  <span>Nome do Responsável da Ronda</span>
+                </div>
+                  <div class="inputbox">
+                    <input type="text" placeholder="Data" id="valueInput" readonly  class="dataToday" required="required" name="Data">
+                    <span>Data & Horário (Atual).
+                  </span>
+                  </div>
+                  <div class="inputbox">
+                  <input type="text" placeholder="" id="valueInput"  class="localidadeInfo" required="required" name="Modalidade">
+                  <select id="localidadeSelect">
+                    <option value="">Qual o Local ?</option>
+                    <option value='A'>A</option>
+                    <option value='B'>B</option>
+                    <option value='C'>C</option>
+                    <option value='D'>D</option>
+                    <option value='E'>E</option>
+                    <option value='F'>F</option>
+                    <option value='G'>G</option>
+                    <option value='H'>H</option>
+                    <option value='I'>I</option>
+                    <option value='J'>J</option>
+                    <option value='K'>K</option>
+                    <option value='BLOCO SAA'>BLOCO SAA</option>
+                    <option value='BLOCO COMERCIAL'>BLOCO COMERCIAL</option>
+                    <option value='BLOCO COORDENAÇÃO/PROFESSORES'>BLOCO COORDENAÇÃO/PROFESSORES</option>
+                    <option value='BLOCO CLÍNICA NUTRIÇÃO'>BLOCO CLÍNICA NUTRIÇÃO</option>
+                    <option value='BLOCO HABILIDADES'>BLOCO HABILIDADES</option>
+                    <option value='BLOCO ANÁLISES CLÍNICAS'>BLOCO ANÁLISES CLÍNICAS</option>
+                    <option value='BLOCO AUDITÓRIO'>BLOCO AUDITÓRIO</option>
+                    <option value='ACESSOS/ENTRADAS'>ACESSOS/ENTRADAS</option>
+                    <option value='BLOCO ADMINISTRATIVO'>BLOCO ADMINISTRATIVO</option>
+                  </select>
+                  <span>Bloco - Locais principais</span>
+                  </div>
+                <div class="inputbox" id="locationEspecific" style="display: none;">
+                  <input type="text" placeholder="" id="valueInput" class="locationinfo" required="required" name="Laboratório de Preferência">
+                  <select id="locationInfo">
+                  </select>
+                  <span>Local Específico</span>
+                </div>
+
+                <div class="inputbox" id="whayTypeRonda" style="display: none;">
+                  <input type="text" placeholder="" id="valueInput" class="rondatypeInfo" required="required" name="Laboratório de Preferência">
+                  <select id="selectRondaType">
+                    <option value=''>Selecione o Tipo de Ronda</option>
+                    <option value='Vistoria Específica de Infraestutura'>Vistoria Específica de Infraestutura</option>
+                    <option value='Ronda Diária'>Ronda Diária</option>
+                  </select>
+                  <span>Tipo de Ronda</span>
+                </div>
+
+                <div class="inputboxCheck" id="rondaday" style="display: none;">
+                  <input type="text" id="myinputRonda">
+                  <div class='optionCheckRonda'><input type='checkbox' name='name' id='' value='Ar Condicionado Ligado'><label for=" value=">Ar Condicionado Ligado</label></div>
+                  <div class='optionCheckRonda'><input type='checkbox' name='name' id='' value='Cheiro de Gás - Gás aberto'><label for=" value=">Cheiro de Gás - Gás aberto</label></div>
+                  <div class='optionCheckRonda'><input type='checkbox' name='name' id='' value='Computador Ligado'><label for=" value=">Computador Ligado</label></div>
+                  <div class='optionCheckRonda'><input type='checkbox' name='name' id='' value='Data Show Ligado'><label for=" value=">Data Show Ligado</label></div>
+                  <div class='optionCheckRonda'><input type='checkbox' name='name' id='' value='Descarga disparada'><label for=" value=">Descarga disparada</label></div>
+                  <div class='optionCheckRonda'><input type='checkbox' name='name' id='' value='Equipamentos Ligados (outros sem ser computador e data show)'><label for=" value=">Equipamentos Ligados (outros sem ser computador e data show)</label></div>
+                  <div class='optionCheckRonda'><input type='checkbox' name='name' id='' value='Luzes Acesas'><label for=" value=">Luzes Acesas</label></div>
+                  <div class='optionCheckRonda'><input type='checkbox' name='name' id='' value='Quadro Branco Preenchido (Professor não limpou o quadro)'><label for=" value=">Quadro Branco Preenchido (Professor não limpou o quadro)</label></div>
+                  <div class='optionCheckRonda'><input type='checkbox' name='name' id='' value='Torneira de Pia de Banheiro/Copa Aberta'><label for=" value=">Torneira de Pia de Banheiro/Copa Aberta</label></div>
+                  <span style="width: 100%;">Ronda Diária (CONDICIONANTE)
+                    Não Conformidade (O que não está conforme?)</span>
+                </div>
+
+                <div class="inputboxCheck" id="vistoriaday" style="display: none;">
+                  <input type="text" id="myinput">
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='OUTROS... (descrever na Observação)'><label for=" value=">OUTROS... (descrever na Observação)</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Quadro Branco Sem Molduras'><label for=" value=">Quadro Branco Sem Molduras</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Quadro Branco Manchado'><label for=" value=">Quadro Branco Manchado</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Quadro Branco Mal Instalado'><label for=" value=">Quadro Branco Mal Instalado</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Portas Descascando'><label for=" value=">Portas Descascando</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Portas Condenadas'><label for=" value=">Portas Condenadas</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Piso Danificado com Rachaduras e Buracos'><label for=" value=">Piso Danificado com Rachaduras e Buracos</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Piso com Pintura Gasta/Arranhado'><label for=" value=">Piso com Pintura Gasta/Arranhado</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Pintura do Barrado Ruim/Manchada'><label for=" value=">Pintura do Barrado Ruim/Manchada</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Pintura da Parede Ruim/Manchada'><label for=" value=">Pintura da Parede Ruim/Manchada</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Mobília Danificada'><label for=" value=">Mobília Danificada</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Mesa do Professor Danificada'><label for=" value=">Mesa do Professor Danificada</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Mesa do Professor - Não Tem'><label for=" value=">Mesa do Professor - Não Tem</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Luzes Queimadas'><label for=" value=">Luzes Queimadas</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Luminárias Tortas'><label for=" value=">Luminárias Tortas</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Luminárias sem Acabamentos'><label for=" value=">Luminárias sem Acabamentos</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Luminárias Despadronizadas'><label for=" value=">Luminárias Despadronizadas</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Janelas Sujas'><label for=" value=">Janelas Sujas</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Janelas Não Fecham'><label for=" value=">Janelas Não Fecham</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Janelas Faltam Fechaduras'><label for=" value=">Janelas Faltam Fechaduras</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Janelas - Cortinas/Persianas Danificadas'><label for=" value=">Janelas - Cortinas/Persianas Danificadas</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Forro - Não Possui Forro'><label for=" value=">Forro - Não Possui Forro</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Forro - Infestação de Pombos'><label for=" value=">Forro - Infestação de Pombos</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Forro - Falta Pintar ou Pintura Ruim'><label for=" value=">Forro - Falta Pintar ou Pintura Ruim</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Forro - Está caindo'><label for=" value=">Forro - Está caindo</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Forro - Acrílico com Ondas'><label for=" value=">Forro - Acrílico com Ondas</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Equipamentos Sem Funcionamento'><label for=" value=">Equipamentos Sem Funcionamento</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Data Show sem foco'><label for=" value=">Data Show sem foco</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Data Show Pendurado'><label for=" value=">Data Show Pendurado</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Data Show não está funcionando'><label for=" value=">Data Show não está funcionando</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Data Show com Fiação Aparecendo'><label for=" value=">Data Show com Fiação Aparecendo</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Computador Não Está Funcionando'><label for=" value=">Computador Não Está Funcionando</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Carteiras Rasgadas'><label for=" value=">Carteiras Rasgadas</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Carteiras Quebradas'><label for=" value=">Carteiras Quebradas</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Carteiras Despadronizadas'><label for=" value=">Carteiras Despadronizadas</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Caixas de Som Mal Instaladas'><label for=" value=">Caixas de Som Mal Instaladas</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Caixas de Som com Fiação Aparecendo'><label for=" value=">Caixas de Som com Fiação Aparecendo</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Caixas de Som - Não Tem'><label for=" value=">Caixas de Som - Não Tem</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Ar Condicionador com Fiação Aparecendo'><label for=" value=">Ar Condicionador com Fiação Aparecendo</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Ar Condicionado Sem Funcionar'><label for=" value=">Ar Condicionado Sem Funcionar</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Ar Condicionado Pingando'><label for=" value=">Ar Condicionado Pingando</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Ar Condicionado - Botoeira Não Liga o Ar'><label for=" value=">Ar Condicionado - Botoeira Não Liga o Ar</label></div>
+                  <div class='optionCheck'><input type='checkbox' name='name' id='' value='Ar Condicionado - Botoeira Não Desliga o Ar'><label for=" value=">Ar Condicionado - Botoeira Não Desliga o Ar</label></div>
+                  <span>Vistoria Específica de Infraestrutura (CONDICIONANTE)
+                    Não Conformidade (O que não está conforme?)</span>
+                </div>
+               
+                <div class="inputbox">
+                  <input type="text" placeholder="Insira sua Observação" class="Observacao" id="valueInput" required="required" name="Professor">
+                  <span>Observação (Caso tenha observações relevantes sobre a não conformidade).</span>
+                </div>
+                <div class="inputbox" id="button-box-sucess" onclick="verificationForms()">
+                  Finalizar Relatório
+                </div>
+              </form>
+
+            </section>
+            <section id="footer-gray" style="display: none;">
+              <img src="../images/logo.png" alt="">
+              <h1>© Copyright 2021 Anhanguera. Todos os direitos reservados.</h1>
+            </section>
+    </div>
+    <!-- <datalist id="equipamentos">
+      <option value="Microfone"></option>
+      <option value="Microfone + Caixa de Som"></option>
+      <option value="Caixa de Som"></option>
+      <option value="Data-Show"></option>
+      <option value="Data-Show + Caixa de Som"></option>
+      <option value="Passador de Slide"></option>
+      <option value="Adaptador HDMI"></option>
+    </datalist> -->
+</body>
+<script src="../jquery/javascript.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+</html>
+
+
+
+
+
+<script>
+  const localidadeSelect = document.getElementById('localidadeSelect');
+  const localidadeInfo = document.querySelector('.localidadeInfo');
+  
+  localidadeSelect.addEventListener('change', function() {
+    if (localidadeSelect.value !== '') {
+      localidadeInfo.value = localidadeSelect.value;
+      console.log(localidadeSelect.value)
+    } else {
+      localidadeInfo.value = '';
+    }
+  });
+</script>
+
+<script>
+  const especifcSelect = document.getElementById('locationInfo');
+  const especifcInfo = document.querySelector('.locationinfo');
+  
+  especifcSelect.addEventListener('change', function() {
+    if (especifcSelect.value !== '') {
+      especifcInfo.value = especifcSelect.value;
+      console.log(especifcSelect.value)
+      whatRonda()
+    } else {
+      especifcInfo.value = '';
+    }
+  });
+</script>
+
+<script>
+  const selectRondaType = document.getElementById('selectRondaType');
+  const rondatypeInfo = document.querySelector('.rondatypeInfo');
+  
+  selectRondaType.addEventListener('change', function() {
+    if (selectRondaType.value !== '') {
+      rondatypeInfo.value = selectRondaType.value;
+      console.log(selectRondaType.value)
+      whatRonda()
+    } else {
+      rondatypeInfo.value = '';
+    }
+  });
+</script>
+
+
+
+
+
+
+
+<script>
+const checkboxes = document.querySelectorAll('.optionCheck input[type="checkbox"]');
+  
+  // Selecionando o input de texto
+  const myInput = document.getElementById('myinput');
+  
+  // Adicionando um evento de clique a cada checkbox
+  checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('click', () => {
+      // Verificando se o checkbox está marcado
+      if (checkbox.checked) {
+        // Adicionando o valor do checkbox ao input de texto
+        myInput.value += checkbox.value + ' | ';
+      } else {
+        // Removendo o valor do checkbox do input de texto
+        myInput.value = myInput.value.replace(checkbox.value + ' ', '');
+        consolelog(myInput.value.replace(checkbox.value + ' | ', ' | '))
+      }
+    });
+  });
+</script>
+
+
+<script>
+  const checkboxesRonda = document.querySelectorAll('.optionCheckRonda input[type="checkbox"]');
+    
+    // Selecionando o input de texto
+    const myInputRonda = document.getElementById('myinputRonda');
+    
+    // Adicionando um evento de clique a cada checkbox
+    checkboxesRonda.forEach(checkbox => {
+      checkbox.addEventListener('click', () => {
+        // Verificando se o checkbox está marcado
+        if (checkbox.checked) {
+          // Adicionando o valor do checkbox ao input de texto
+          myInputRonda.value += checkbox.value + ' | ';
+        } else {
+          // Removendo o valor do checkbox do input de texto
+          myInputRonda.value = myInputRonda.value.replace(checkbox.value + ' ', '');
+          consolelog(myInputRonda.value.replace(checkbox.value + ' | ', ' | '))
+        }
+      });
+    });
+  </script>
