@@ -26,9 +26,40 @@
          
             <form class="informatica" id="form-container" style="display: flex;" method="post">
                 <div class="inputbox">
-                  <input type="text" placeholder="Insira o Nome" id="valueInput" class="name" required="required" name="Nome do Respondavel de Ronda">
+                  <input type="text" placeholder="" id="valueInput"  class="name" required="required" name="Modalidade">
+                  <select id="nomeSelect">
+                    <option value="">Quem é o responsavel da Ronda ?</option>
+                    <option value='Acássio'>Acássio</option>
+                    <option value='Alexandre'>Alexandre</option>
+                    <option value='Bruno Soares'>Bruno Soares</option>
+                    <option value='Daniela Melo'>Daniela Melo</option>
+                    <option value='Deivison'>Deivison</option>
+                    <option value='Diones'>Diones</option>
+                    <option value='Elikais Souza'>Elikais Souza</option>
+                    <option value='Fabio'>Fabio</option>
+                    <option value='Hernani'>Hernani</option>
+                    <option value='Jackline Pires'>Jackline Pires</option>
+                    <option value='José Gustavo'>José Gustavo</option>
+                    <option value='Leonardo'>Leonardo</option>
+                    <option value='Lucas'>Lucas</option>
+                    <option value='Luis Eduardo'>Luis Eduardo</option>
+                    <option value='Luiz Carlos'>Luiz Carlos</option>
+                    <option value='Marcio'>Marcio</option>
+                    <option value='Marcos'>Marcos</option>
+                    <option value='Mariana Nadier'>Mariana Nadier</option>
+                    <option value='Matheus Pereira'>Matheus Pereira</option>
+                    <option value='Mauro Monteiro'>Mauro Monteiro</option>
+                    <option value='Mirian'>Mirian</option>
+                    <option value='Mirlane'>Mirlane</option>
+                    <option value='Osmundo Gonzaga'>Osmundo Gonzaga</option>
+                    <option value='Rivana Barros'>Rivana Barros</option>
+                    <option value='Tayná Matos'>Tayná Matos</option>
+                    <option value='Thamyris Py'>Thamyris Py</option>
+                    <option value='Tiago Novaes'>Tiago Novaes</option>
+                    <option value='Victor Souza'>Victor Souza</option>
+                  </select>
                   <span>Nome do Responsável da Ronda</span>
-                </div>
+              </div>
                   <div class="inputbox">
                     <input type="text" placeholder="Data" id="valueInput" readonly  class="dataToday" required="required" name="Data">
                     <span>Data & Horário (Atual).
@@ -69,7 +100,7 @@
                 </div>
 
                 <div class="inputbox" id="whayTypeRonda" style="display: none;">
-                  <input type="text" placeholder="" id="valueInput" class="rondatypeInfo" required="required" name="Laboratório de Preferência">
+                  <input type="text" placeholder="" id="valueInput" readonly class="rondatypeInfo" required="required" name="Laboratório de Preferência">
                   <select id="selectRondaType">
                     <option value=''>Selecione o Tipo de Ronda</option>
                     <option value='Vistoria Específica de Infraestutura'>Vistoria Específica de Infraestutura</option>
@@ -80,21 +111,21 @@
 
                 <div class="inputboxCheck" id="rondaday" style="display: none;">
                   <input type="text" id="myinputRonda">
-                  <div class='optionCheckRonda'><input type='checkbox' name='name' id='' value='Ar Condicionado Ligado'><label for=" value=">Ar Condicionado Ligado</label></div>
-                  <div class='optionCheckRonda'><input type='checkbox' name='name' id='' value='Cheiro de Gás - Gás aberto'><label for=" value=">Cheiro de Gás - Gás aberto</label></div>
-                  <div class='optionCheckRonda'><input type='checkbox' name='name' id='' value='Computador Ligado'><label for=" value=">Computador Ligado</label></div>
-                  <div class='optionCheckRonda'><input type='checkbox' name='name' id='' value='Data Show Ligado'><label for=" value=">Data Show Ligado</label></div>
-                  <div class='optionCheckRonda'><input type='checkbox' name='name' id='' value='Descarga disparada'><label for=" value=">Descarga disparada</label></div>
-                  <div class='optionCheckRonda'><input type='checkbox' name='name' id='' value='Equipamentos Ligados (outros sem ser computador e data show)'><label for=" value=">Equipamentos Ligados (outros sem ser computador e data show)</label></div>
-                  <div class='optionCheckRonda'><input type='checkbox' name='name' id='' value='Luzes Acesas'><label for=" value=">Luzes Acesas</label></div>
-                  <div class='optionCheckRonda'><input type='checkbox' name='name' id='' value='Quadro Branco Preenchido (Professor não limpou o quadro)'><label for=" value=">Quadro Branco Preenchido (Professor não limpou o quadro)</label></div>
                   <div class='optionCheckRonda'><input type='checkbox' name='name' id='' value='Torneira de Pia de Banheiro/Copa Aberta'><label for=" value=">Torneira de Pia de Banheiro/Copa Aberta</label></div>
+<div class='optionCheckRonda'><input type='checkbox' name='name' id='' value='Quadro Branco Preenchido (Professor não limpou o quadro)'><label for=" value=">Quadro Branco Preenchido (Professor não limpou o quadro)</label></div>
+<div class='optionCheckRonda'><input type='checkbox' name='name' id='' value='Luzes Acesas'><label for=" value=">Luzes Acesas</label></div>
+<div class='optionCheckRonda'><input type='checkbox' name='name' id='' value='Equipamentos Ligados (outros sem ser computador e data show)'><label for=" value=">Equipamentos Ligados (outros sem ser computador e data show)</label></div>
+<div class='optionCheckRonda'><input type='checkbox' name='name' id='' value='Descarga disparada'><label for=" value=">Descarga disparada</label></div>
+<div class='optionCheckRonda'><input type='checkbox' name='name' id='' value='Data Show Ligado'><label for=" value=">Data Show Ligado</label></div>
+<div class='optionCheckRonda'><input type='checkbox' name='name' id='' value='Computador Ligado'><label for=" value=">Computador Ligado</label></div>
+<div class='optionCheckRonda'><input type='checkbox' name='name' id='' value='Cheiro de Gás - Gás aberto'><label for=" value=">Cheiro de Gás - Gás aberto</label></div>
+<div class='optionCheckRonda'><input type='checkbox' name='name' id='' value='Ar Condicionado Ligado'><label for=" value=">Ar Condicionado Ligado</label></div>
                   <span style="width: 100%;">Ronda Diária (CONDICIONANTE)
                     Não Conformidade (O que não está conforme?)</span>
                 </div>
 
                 <div class="inputboxCheck" id="vistoriaday" style="display: none;">
-                  <input type="text" id="myinput">
+                  <input type="text" id="myinput" readonly>
                   <div class='optionCheck'><input type='checkbox' name='name' id='' value='OUTROS... (descrever na Observação)'><label for=" value=">OUTROS... (descrever na Observação)</label></div>
                   <div class='optionCheck'><input type='checkbox' name='name' id='' value='Quadro Branco Sem Molduras'><label for=" value=">Quadro Branco Sem Molduras</label></div>
                   <div class='optionCheck'><input type='checkbox' name='name' id='' value='Quadro Branco Manchado'><label for=" value=">Quadro Branco Manchado</label></div>
@@ -200,6 +231,21 @@
       whatRonda()
     } else {
       especifcInfo.value = '';
+    }
+  });
+</script>
+
+<script>
+  const nomeSelect = document.getElementById('nomeSelect');
+  const nameInput = document.querySelector('.name');
+  
+  nomeSelect.addEventListener('change', function() {
+    if (nomeSelect.value !== '') {
+      nameInput.value = nomeSelect.value;
+      console.log(nomeSelect.value)
+      whatRonda()
+    } else {
+      nameInput.value = '';
     }
   });
 </script>

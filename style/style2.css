@@ -1717,17 +1717,16 @@ border-radius: 8px;
 /* thumb (barra de arrastar) */
 ::-webkit-scrollbar-thumb {
 background-color: #FF6200;
-border-radius: 8px;
 }
 
 /* hover da thumb */
 ::-webkit-scrollbar-thumb:hover {
-background-color: #D8340C;
+background-color: #FF6200;
 }
 
 /* thumb quando está ativa */
 ::-webkit-scrollbar-thumb:active {
-background-color: #BF2809;
+background-color: #FF6200;
 }
 
 
@@ -1876,7 +1875,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 }
 
-.localidadeInfo{
+.localidadeInfo, .name{
   position: absolute;
   left: 5000px;
 }
